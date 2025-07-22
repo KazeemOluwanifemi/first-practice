@@ -5,7 +5,7 @@ public class first{
         Scanner input = new Scanner(System.in);
 //        Calculating the user-specified number of days to seconds
 
-        System.out.println("What is your grade?");
+        System.out.println("What is your grade [0-100]?");
         int grade = input.nextInt();
 
         if(grade < 0){
