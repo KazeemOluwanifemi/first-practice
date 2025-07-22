@@ -2,26 +2,25 @@ import java.util.Scanner;
 
 public class first{
     public static void main(String[] args){
-        Scanner scanner1 = new Scanner(System.in);
-        // Scanner scanner2 = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+//        Reading different variable types from users
+//        String input
+        System.out.println("Please enter your name: ");
+        String textMessage = input.nextLine();
+        System.out.println(textMessage);
 
-        // Print out a message
-        System.out.println("Chicken: ");
-        int chickens = 9000;
-        System.out.println(chickens);
+//        String valueAsString = "This";
+//        int value = Integer.valueOf(valueAsString); -> doesn't work cause Integer.valueOf can only convert
+//                                                       strings that represents valid numbers
+//        System.out.println(value);
 
-        System.out.println("Bacon(kg): ");
-        double weight = 0.1;
-        System.out.println(weight);
 
-        System.out.println("Tractor: ");
-        String tractor = "Zetor";
-        System.out.println(tractor);
+//        Integer input
+        System.out.println("Please enter your age: ");
+//        Data type conversion & reading user input
+        Integer age = Integer.valueOf(input.nextLine());
+        System.out.println(age);
 
-        System.out.println("And finally, a summary: ");
-        System.out.println(chickens + "\n" + weight + "\n" + tractor);
-        // System.out.println(weight);
-        // System.out.println(tractor);
 
     }
 }
