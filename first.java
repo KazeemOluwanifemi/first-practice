@@ -4,14 +4,15 @@ public class first{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 //        Calculating the user-specified number of days to seconds
-        String password = "Caput Draconis";
-        System.out.println("Password: ");
-        String trial = input.nextLine();
+        System.out.println("Give a year: ");
+        int year = input.nextInt();
 
-        if(trial.equals(password)){
-            System.out.println("Welcome!");
+        if(year % 100 == 0 && year % 400 == 0){
+            System.out.println("It is a leap year");
+        }else if(year % 4 == 0) {
+            System.out.println("It is a leap year");
         } else{
-            System.out.println("Off with you!");
+            System.out.println("It is not a leap year");
         }
     }
 }
