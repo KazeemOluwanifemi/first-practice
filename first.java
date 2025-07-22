@@ -4,15 +4,14 @@ public class first{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 //        Calculating the user-specified number of days to seconds
-        System.out.println("Enter a number: ");
-        int value = input.nextInt();
+        String password = "Caput Draconis";
+        System.out.println("Password: ");
+        String trial = input.nextLine();
 
-        if(value % 2 == 0){
-            System.out.println(value + " is an even number");
-        } else if(value % 2 == 1){
-            System.out.println(value + " is an odd number");
+        if(trial.equals(password)){
+            System.out.println("Welcome!");
         } else{
-            System.out.println("Enter a valid number");
+            System.out.println("Off with you!");
         }
     }
 }
