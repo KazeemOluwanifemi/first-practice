@@ -5,11 +5,17 @@ public class first{
         Scanner input = new Scanner(System.in);
 //        Calculating the user-specified number of days to seconds
 
-        System.out.println("How many days do you want to convert to seconds? ");
-        int days = Integer.valueOf(input.nextLine());
-        int seconds = days * (24 * 60 * 60);
+        System.out.println("Give the first number: ");
+        int firstNumber = Integer.valueOf(input.nextLine());
+        System.out.println(firstNumber);
 
-        System.out.println(days + " days is equal to " + seconds + " seconds.");
+        System.out.println("Give the second number: ");
+        int secondNumber = Integer.valueOf(input.nextLine());
+        System.out.println(secondNumber);
+
+        System.out.println("The sum of " + firstNumber + " and " + secondNumber + " is " + (firstNumber + secondNumber));
+//        System.out.println(firstNumber "+" secondNumber);
+
 
 
     }
