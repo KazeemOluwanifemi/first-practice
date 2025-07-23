@@ -5,17 +5,14 @@ public class first{
 //        user input variable
         Scanner reader = new Scanner(System.in);
 
-//        A program to calculate the square of a user specified integer
-        System.out.println("What number would you like to find the square of?");
-        int input1 = reader.nextInt();
-        System.out.println("The square of " + input1 + " is " + input1 * input1);
+//        A program to find the absolute value of a user's integer input
+        System.out.println("Please enter a number(positive/negative): ");
+        int number = reader.nextInt();
 
-        System.out.println("Enter two random numbers: ");
-        int input2 = reader.nextInt();
-        int input3 = reader.nextInt();
-
-        int sum = input2 + input3;
-        double sqrt = Math.sqrt(sum);
-        System.out.println("The square root of the sum of " + input2 + " and " + input3 + " is " + sqrt);
+        if(number < 0){
+            System.out.println("The absolute value of " + number + " is " + (number * -1));
+        } else{
+            System.out.println("The number you entered is " + number);
+        }
     }
 }
