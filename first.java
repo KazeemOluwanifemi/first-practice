@@ -2,19 +2,28 @@ import java.util.Scanner;
 
 public class first{
     public static void main(String[] args){
-//        user input variable
+//       The reader variable
         Scanner reader = new Scanner(System.in);
+//        Ask users for input any number
 
-//        An introduction to loops
+        int counter = 0;
         while(true){
-            System.out.println("Give a number: ");
-            int answer =  reader.nextInt();
+            System.out.println("Enter any number: ");
+            int input = reader.nextInt();
 
-            if(answer == 4){
+            if(input < 0 && counter < 5){
+                System.out.println("Unsuitable number");
+                System.out.println("Try again.");
+            } else if(input == 0 && counter < 5){
+                System.out.println("Unfit number, try again.");
+                continue;
+            } else if(input > 0 && counter < 5){
+                System.out.println(input * input);
+            } else{
+                System.out.println("You have exceeded your 5 tries");
                 break;
             }
-            System.out.println("Okay, you inputted: " + answer + " so, let's carry on." );
+            counter = (counter + 1);
         }
-        System.out.println("Welcome back!");
     }
 }
