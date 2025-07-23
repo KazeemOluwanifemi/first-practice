@@ -4,26 +4,20 @@ public class first{
     public static void main(String[] args){
 //       The reader variable
         Scanner reader = new Scanner(System.in);
-//        Ask users for input any number
-
+//        Initialize counter
         int counter = 0;
-        while(true){
-            System.out.println("Enter any number: ");
-            int input = reader.nextInt();
 
-            if(input < 0 && counter < 5){
-                System.out.println("Unsuitable number");
-                System.out.println("Try again.");
-            } else if(input == 0 && counter < 5){
-                System.out.println("Unfit number, try again.");
-                continue;
-            } else if(input > 0 && counter < 5){
-                System.out.println(input * input);
-            } else{
-                System.out.println("You have exceeded your 5 tries");
+        while(true){
+//            Ask for and take user's number
+            System.out.println("Enter a number[end the loop with key 0]: ");
+            int number = reader.nextInt();
+//             Check for the input against conditional statements
+            if(number == 0){
                 break;
+            } else{
+                counter = counter + 1;
             }
-            counter = (counter + 1);
         }
+        System.out.println("Total number of inputted values (excluding zero): " + counter);
     }
 }
