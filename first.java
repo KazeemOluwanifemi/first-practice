@@ -6,18 +6,20 @@ public class first{
         Scanner reader = new Scanner(System.in);
 //        Initialize counter
         int counter = 0;
+        int sum = 0;
 
+//        initialize loop
         while(true){
-//            Ask for and take user's number
-            System.out.println("Enter a number[end the loop with key 0]: ");
-            int number = reader.nextInt();
-//             Check for the input against conditional statements
+            System.out.println("Enter a number[exit with key 0]: ");
+            int number =  reader.nextInt();
             if(number == 0){
                 break;
             } else{
                 counter = counter + 1;
+                sum = sum + number;
             }
         }
-        System.out.println("Total number of inputted values (excluding zero): " + counter);
+        System.out.println("Number of numbers: " + counter);
+        System.out.println("Sum of numbers: " + sum);
     }
 }
