@@ -5,14 +5,15 @@ public class first{
 //        user input variable
         Scanner reader = new Scanner(System.in);
 
-//        A program to find the absolute value of a user's integer input
-        System.out.println("Please enter a number(positive/negative): ");
-        int number = reader.nextInt();
+//        An introduction to loops
+        int i = 0;
 
-        if(number < 0){
-            System.out.println("The absolute value of " + number + " is " + (number * -1));
-        } else{
-            System.out.println("The number you entered is " + number);
+        while(true){
+            System.out.println(i);
+            if(i >= 5){
+                break;
+            }
+            i = i + 1;
         }
     }
 }
