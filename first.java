@@ -6,14 +6,15 @@ public class first{
         Scanner reader = new Scanner(System.in);
 
 //        An introduction to loops
-        int i = 0;
-
         while(true){
-            System.out.println(i);
-            if(i >= 5){
+            System.out.println("Give a number: ");
+            int answer =  reader.nextInt();
+
+            if(answer == 4){
                 break;
             }
-            i = i + 1;
+            System.out.println("Okay, you inputted: " + answer + " so, let's carry on." );
         }
+        System.out.println("Welcome back!");
     }
 }
