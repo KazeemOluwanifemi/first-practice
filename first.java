@@ -5,15 +5,16 @@ public class first{
 //       The reader variable
         Scanner reader = new Scanner(System.in);
 //
-        printUntilNumber(5);
+        divisibleByThreeInRange(1, 10);
     }
 
-    public static void printUntilNumber(int number){
-//        int i = 1;
-        while(number >=1 ){
-            System.out.println(number);
-            number--;
+    public static void divisibleByThreeInRange(int beginning, int end){
+        int i = beginning;
+        while(i <= end){
+            if(i % 3 == 0){
+                System.out.println(i);
+            }
+            i++;
         }
-//        System.out.println("In a hole in the ground, there lived a method.");
     }
 }
