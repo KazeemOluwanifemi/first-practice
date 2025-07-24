@@ -1,20 +1,28 @@
 public class first{
+
+
+//    main method in the call stack
     public static void main(String[] args){
-//       The reader variable
-//        Scanner reader = new Scanner(System.in);
-
-        double result = avg(30, 21, 22, 50);
-        System.out.println("Average: " + result);
-
-//
+        multiplicationTable(3);
     }
 
-    public static int sum(int a, int b, int c, int d){
-        return a + b + c + d;
+//    method that forms the rows of the multiplication table
+    public static void multiplicationTable(int max){
+        int number = 1;
+
+        while(number <= max){
+            printMultiplicationTable(number, max);
+            number++;
+        }
     }
 
-    public static double avg(int a, int b, int c, int d){
-        int sum = sum(a,b,c,d);
-        return 1.0 * sum / 4;
+    public static void printMultiplicationTable(int number, int max){
+        int printable = number;
+        while (printable <= number* max){
+            System.out.print(" " + printable);
+            printable += number;
+        }
+
+        System.out.println(" ");
     }
 }
