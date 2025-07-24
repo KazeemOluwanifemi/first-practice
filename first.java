@@ -4,22 +4,14 @@ public class first{
     public static void main(String[] args){
 //       The reader variable
         Scanner reader = new Scanner(System.in);
-//        Initialize counter
-        int counter = 0;
+//        user input
+        System.out.println("Last number of the sequence?");
+        int last = reader.nextInt();
         int sum = 0;
 
-//        initialize loop
-        while(true){
-            System.out.println("Enter a number[exit with key 0]: ");
-            int number =  reader.nextInt();
-            if(number == 0){
-                break;
-            } else{
-                counter = counter + 1;
-                sum = sum + number;
-            }
+        for(int i = 1; i <= last; i++){
+            sum = sum + i;
         }
-        System.out.println("Number of numbers: " + counter);
-        System.out.println("Sum of numbers: " + sum);
+        System.out.println("The sum is " + sum);
     }
 }
