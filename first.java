@@ -9,9 +9,11 @@ public class first{
 
 //    Method to print star
     public static void printStar(int height){
-        for(int i = 1; i <= height; i++){
+        int count = height;
+        for(int i = 1; i <= count; i++){
+            printSpaces(height);
+            height--;
             printStars(i);
-//            height++;
         }
     }
 
@@ -23,4 +25,10 @@ public class first{
         System.out.println();
     }
 
+//    Method to print spaces
+    public static void printSpaces(int n){
+        for (int i = n; i > 0; i--){
+            System.out.print(" ");
+        }
+    }
 }
