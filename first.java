@@ -4,12 +4,12 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args){
 //        Specify the number of the stars
-        printSquare(4,4);
+        printSquare(4);
     }
 
 //    Method to print square
-    public static void printSquare(int n, int lineNo){
-        for(int i = 0; i < lineNo; i++){
+    public static void printSquare(int n){
+        for(int i = 0; i < n; i++){
             printLineOfStars(n);
         }
     }
