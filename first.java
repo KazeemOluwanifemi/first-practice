@@ -6,21 +6,23 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args){
         Scanner reader = new Scanner(System.in);
-        ArrayList<String> wordList = new ArrayList<>();
+        ArrayList<Integer> numberList = new ArrayList<>();
         int i = 0;
         while(true){
-            System.out.println("Enter the names of employees: ");
-            String name = reader.nextLine();
+            System.out.println("Enter a number[Enter key 0 to stop]: ");
+            int number = reader.nextInt();
 
-            if(name.isEmpty()){
-                System.out.println("invalid entry");
+            if(number == 0){
+//                System.out.println("invalid entry");
                 break;
             } else {
-                 wordList.add(name);
+                 numberList.add(number);
                  i++;
             }
         }
+        int sum = numberList.get(1) + numberList.get(2);
 
-        System.out.println(wordList.get(2));
+        System.out.println("The sum of the first and second number is: " + sum );
+        System.out.println();
     }
 }
