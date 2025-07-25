@@ -4,13 +4,13 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args){
 //        Specify the number of the stars
-        printSquare(4);
+        printSquare(17, 3);
     }
 
 //    Method to print square
-    public static void printSquare(int n){
-        for(int i = 0; i < n; i++){
-            printLineOfStars(n);
+    public static void printSquare(int breadth, int height){
+        for(int i = 0; i < height; i++){
+            printLineOfStars(breadth);
         }
     }
 
@@ -19,7 +19,7 @@ public class first{
         for(int i = 0; i < n; i++){
             System.out.print("*");
         }
-        System.out.println(" ");
+        System.out.println();
     }
 
 }
