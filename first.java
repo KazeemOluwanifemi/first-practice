@@ -6,23 +6,21 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args){
         Scanner reader = new Scanner(System.in);
-        ArrayList<Integer> numberList = new ArrayList<>();
-        int i = 0;
-        while(true){
-            System.out.println("Enter a number[Enter key 0 to stop]: ");
-            int number = reader.nextInt();
 
-            if(number == 0){
-//                System.out.println("invalid entry");
-                break;
-            } else {
-                 numberList.add(number);
-                 i++;
-            }
+//        A program to iterate over a list using a for loop
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(26);
+        list.add(74);
+        list.add(32);
+        list.add(49);
+        list.add(14);
+
+        for(int i = 0; i < list.size(); i++){
+            System.out.println(i);
         }
-        int sum = numberList.get(1) + numberList.get(2);
 
-        System.out.println("The sum of the first and second number is: " + sum );
-        System.out.println();
     }
+
+
 }
