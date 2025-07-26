@@ -17,7 +17,7 @@ public class first{
         list.add(14);
 
         for(int i = 0; i < list.size(); i++){
-            System.out.println(i);
+            System.out.println(list.get(i));
         }
 
     }
