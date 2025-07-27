@@ -27,14 +27,13 @@ public class first{
             }
 
         }
-        System.out.println("From where?");
-        int lower = reader.nextInt();
-        System.out.println("To where?");
-        int higher = reader.nextInt();
-
-        for(int i = lower; i <= higher; i++){
-            System.out.println(users.get(i));
+        int largestNumber = users.get(0);
+        for(int i = 0; i < users.size(); i++){
+            if(largestNumber < users.get(i)){
+                largestNumber = users.get(i);
+            }
         }
+        System.out.println("The largest number in the list is: " + largestNumber);
 //        for(int i = 0; i <users.size(); i++){
 //            System.out.println(users.get(i));
 //        }
