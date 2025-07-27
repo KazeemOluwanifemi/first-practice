@@ -26,11 +26,8 @@ public class first{
             }
         }
         int lastUserIndex = users.size() - 1;
-        System.out.println(users.get(lastUserIndex));
-//        int indexOfLast = users.size() - 1;
-//
-//        String lastName = users.get(indexOfLast);
-//        System.out.println(lastName);
+        System.out.println("The first name on the list is " + users.get(0));
+        System.out.println("The last name on the list is " + users.get(lastUserIndex));
     }
 
 
