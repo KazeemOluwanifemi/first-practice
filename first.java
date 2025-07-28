@@ -15,11 +15,8 @@ public class first{
                 break;
             } else{
                 String[] pieces = user.split(" ");
-                for(int i = 0; i < pieces.length; i++){
-                    if(pieces[i].contains("av")){
-                        System.out.println(pieces[i]);
-                    }
-                }
+                int last = pieces.length -1;
+                System.out.println(pieces[last]);
             }
         }
     }
