@@ -8,7 +8,7 @@ public class first{
         Scanner reader = new Scanner(System.in);
 
         while(true){
-            System.out.println("Enter a sentence[give an empy input to end the loop]: ");
+            System.out.println("Enter a sentence[give an empty input to end the loop]: ");
             String user = reader.nextLine();
 
             if(user.isEmpty()){
@@ -16,7 +16,9 @@ public class first{
             } else{
                 String[] pieces = user.split(" ");
                 for(int i = 0; i < pieces.length; i++){
-                    System.out.println(pieces[i]);
+                    if(pieces[i].contains("av")){
+                        System.out.println(pieces[i]);
+                    }
                 }
             }
         }
