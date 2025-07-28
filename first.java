@@ -6,28 +6,27 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        int[] numbers = new int[5];
-        numbers[0] = 1;
-        numbers[1] = 3;
-        numbers[2] = 5;
-        numbers[3] = 7;
-        numbers[4] = 9;
 
-        for(int i = 0; i < numbers.length; i++){
-            System.out.println(numbers[i]);
+
+        String correctUser = "alex";
+        String correctUser2 = "emma";
+        String correctPassword = "sunshine";
+        String correctPassword2 = "haskell";
+
+        while(true){
+            System.out.print("Enter username: ");
+            String userName = reader.nextLine();
+            System.out.print("Enter password: ");
+            String passWord = reader.nextLine();
+            if(userName.equals(correctUser) && passWord.equals(correctPassword)){
+                System.out.print("You have logged in successfully!");
+                break;
+            } else if(userName.equals(correctUser2) && passWord.equals(correctPassword2)){
+                System.out.print("You have logged in successfully!");
+                break;
+            } else{
+                System.out.println("Incorrect username or password");
+            }
         }
-
-        System.out.println("Give two indices to swap: ");
-        int firstNumber = reader.nextInt();
-        int secondNumber = reader.nextInt();
-
-        int helper = numbers[firstNumber];
-        numbers[firstNumber] = numbers[secondNumber];
-        numbers[secondNumber] = helper;
-
-        for(int i = 0; i < numbers.length; i++){
-            System.out.println(numbers[i]);
-        }
-
     }
 }
