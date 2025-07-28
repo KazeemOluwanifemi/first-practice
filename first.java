@@ -6,54 +6,31 @@ public class first{
 //    main method in the call stack
     public static void main(String[] args){
 //        System.out.println("Name of last user is: " + lastElementOfList());
-        lastElementOfList();
+        methodOfLists();
     }
 
-    public static void lastElementOfList(){
+    public static void methodOfLists(){
+        ArrayList<String> list = new ArrayList<>();
         Scanner reader = new Scanner(System.in);
-        ArrayList<Integer> users = new ArrayList<>();
-        System.out.println("Enter random numbers[enter -1 to stop loop]: ");
-        int number = reader.nextInt();
-        users.add(number);
 
-        for(int i = 0; i < users.size(); i++){
-            number = reader.nextInt();
-            if(number == -1){
-                System.out.println("Loop ends now");
+//        User fills up the list
+        System.out.println("Who are the members of the club? [Enter an empty space to end loop]");
+        String input;
+        while (true) {
+            input = reader.nextLine();
 
-                break;
-            } else{
-                users.add(number);
+            if (input.isEmpty()) {
+                break; // Exit when empty line is entered
             }
 
+            list.add(input); // Add member to list
         }
-
-        int sum = 0;
-        int size = users.size();
-        double avg = 0.0;
-        for(int n: users){
-            sum = n + sum;
-            avg = 1.0 * sum /size;
+//        check if a value exists in the list
+        System.out.println("Who are you looking for?");
+        input = reader.nextLine();
+        if(list.contains(input)){
+            System.out.println(input + " is on the list");
         }
-
-        System.out.println("The average of numbers is: " + avg);
-//        for(int i = 0; i <users.size(); i++){
-//            System.out.println(users.get(i));
-//        }
-
-//        System.out.println(users.get(0,5));
-//        int i = 0;
-//        while(!users.isEmpty()){
-//            if(i < users.size()){
-//                i++;
-//            } else{
-//                break;
-//            }
-//            System.out.println(users.get(i));
-//        }
-//        int lastUserIndex = users.size() - 1;
-//        System.out.println("The numbers are: " + users);
-//        System.out.println("The last name on the list is " + users.get(lastUserIndex));
     }
 
 
