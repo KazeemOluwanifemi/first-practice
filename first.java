@@ -27,14 +27,13 @@ public class first{
             }
 
         }
-        int smallestNumber = users.get(0);
 
-        for(int i = 0; i < users.size(); i++){
-            if(smallestNumber > users.get(i)){
-                smallestNumber = users.get(i);
-            }
+        int sum = 0;
+        for(int n: users){
+            sum = sum + n;
         }
-        System.out.println("The smallest number in the list is: " + smallestNumber);
+
+        System.out.println("The sum of numbers is: " + sum);
 //        for(int i = 0; i <users.size(); i++){
 //            System.out.println(users.get(i));
 //        }
