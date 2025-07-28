@@ -29,11 +29,14 @@ public class first{
         }
 
         int sum = 0;
+        int size = users.size();
+        double avg = 0.0;
         for(int n: users){
-            sum = sum + n;
+            sum = n + sum;
+            avg = 1.0 * sum /size;
         }
 
-        System.out.println("The sum of numbers is: " + sum);
+        System.out.println("The average of numbers is: " + avg);
 //        for(int i = 0; i <users.size(); i++){
 //            System.out.println(users.get(i));
 //        }
