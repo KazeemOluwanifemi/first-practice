@@ -27,13 +27,14 @@ public class first{
             }
 
         }
-        int largestNumber = users.get(0);
+        int smallestNumber = users.get(0);
+
         for(int i = 0; i < users.size(); i++){
-            if(largestNumber < users.get(i)){
-                largestNumber = users.get(i);
+            if(smallestNumber > users.get(i)){
+                smallestNumber = users.get(i);
             }
         }
-        System.out.println("The largest number in the list is: " + largestNumber);
+        System.out.println("The smallest number in the list is: " + smallestNumber);
 //        for(int i = 0; i <users.size(); i++){
 //            System.out.println(users.get(i));
 //        }
