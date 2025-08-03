@@ -21,12 +21,14 @@ public class first{
         String teamName = reader.nextLine();
         int noOfGamesPlayed = 0;
         int noOfGamesWon = 0;
-//        int noOfGamesLost = 0;
+        int noOfGamesLost = 0;
 
         for(int i = 0; i < homeTeams.size(); i++){
             if(homeTeams.get(i).equals(teamName)){
                 if(homePoints.get(i) > visitingPoints.get(i)){
-                    noOfGamesWon = noOfGamesWon + 1;
+                    noOfGamesWon++;
+                } else{
+                    noOfGamesLost++;
                 }
                 noOfGamesPlayed = noOfGamesPlayed + 1;
             }
@@ -34,5 +36,6 @@ public class first{
 
         System.out.println("The number of games played by " + teamName + " is " + noOfGamesPlayed);
         System.out.println("The number of games won by " + teamName + " is " + noOfGamesWon);
+        System.out.println("The number of games lost by " + teamName + " is " + noOfGamesLost);
     }
 }
